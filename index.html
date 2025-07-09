@@ -136,6 +136,42 @@
       background: #00f2fe;
       color: #000;
     }
+
+    /* Light Theme */
+body.light-theme {
+  background: #f4f7ff;
+  color: #222;
+}
+
+body.light-theme .card {
+  background: #ffffff;
+  color: #000;
+}
+
+body.light-theme .card-header {
+  background: #eaeaea;
+}
+
+body.light-theme .btn {
+  background: #4facfe;
+  color: #fff;
+}
+
+body.light-theme .btn:hover {
+  background: #00f2fe;
+  color: #000;
+}
+
+body.light-theme .social-btn {
+  background: #e0e0e0;
+  color: #000;
+}
+
+body.light-theme .social-btn:hover {
+  background: #00f2fe;
+  color: #000;
+}
+
   </style>
 </head>
 <body>
@@ -198,4 +234,27 @@
     </div>
   </footer>
 </body>
+  <script>
+  const themeToggle = document.querySelector('.theme-toggle');
+  const icon = themeToggle.querySelector('i');
+  const body = document.body;
+
+  // Check saved preference
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    body.classList.add('light-theme');
+    icon.classList.replace('bi-moon-stars', 'bi-sun-fill');
+  }
+
+  // Toggle theme
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-theme');
+    const isLight = body.classList.contains('light-theme');
+
+    icon.classList.toggle('bi-moon-stars', !isLight);
+    icon.classList.toggle('bi-sun-fill', isLight);
+
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
+</script>
 </html>
