@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>APNI KAKSHA</title>
+  <title> VILEN-APNI KAKSHA</title>
   <link rel="icon" href="https://www.coachingselect.com/public/coaching/coaching-16413662843.jpeg" type="image/x-icon" />
   <style>
     :root {
@@ -29,9 +29,10 @@
     }
 
     .header {
-      background-color: var(--primary-color);
-      padding: 20px;
-      font-size: 26px;
+      background: linear-gradient(to right, #00f2fe, #4facfe);
+      padding: 10px;
+      font-size: 46px;
+      font-weight: 700;
       text-align: center;
       position: fixed;
       width: 100%;
@@ -44,9 +45,12 @@
     .title {
       text-align: center;
       font-size: 42px;
-      font-weight: 600;
-      margin-top: 20px;
-      color: var(--primary-color);
+      font-weight: 700;
+      margin-top: 0px;
+      background: linear-gradient(to right, #00f2fe, #4facfe);
+      -webkit-background-clip: text;
+      color: transparent;
+
     }
 
     .container {
@@ -138,7 +142,7 @@
     }
 
     .btn:hover {
-      background-color: #004095;
+      background-color: #fff;
     }
 
     .popup {
@@ -184,15 +188,15 @@
         }
 
     .popup-btn {
-            display: block; /* Stacks buttons vertically */
-            margin: 10px auto; /* Centers buttons with vertical spacing */
+            display: block;
+            margin: 10px auto;
             padding: 10px 20px;
-            background: #00034F; /* Green background */
-            color: #DCE216; /* Blue text */
+            background: #00034F;
+            color: #DCE216;
             text-decoration: none;
             border-radius: 5px;
             font-size: 18px;
-            width: fit-content; /* Ensures button width fits content */
+            width: fit-content;
         }
 
     .popup-btn:hover {
@@ -220,7 +224,7 @@
   <div id="popup" class="popup">
         <div class="popup-content">
             <button class="close-btn" onclick="closePopup()">×</button>
-            <div class="popup-message" id="popupMessage">This Popup message closed in <span id="countdown">5</span> seconds</div>
+            <div class="popup-message" id="popupMessage">This Popup message closed in <span id="countdown">10</span> seconds</div>
             <p style="color: #449F75; font-size:24px;">JEE Material & Instant Doubt Solving by VILEN</p>
               <p style="color: #141C3A; font-size:15px;">𝗝𝗼𝗶𝗻 𝗙𝗮𝘀𝘁 𝗟𝗶𝗻𝗸 𝗘𝘅𝗽𝗶𝗿𝗲𝘀 𝗶𝗻 𝗙𝗲𝘄 𝗠𝗶𝗻𝘂𝘁𝗲𝘀👇</p>
             <img src="https://www.coachingselect.com/public/coaching/coaching-16413662843.jpeg" alt="Popup Image">
@@ -266,13 +270,20 @@
         window.onload = showPopup;
     </script>
     <div class="header">
-         <marquee behavior="alternate" direction="left" scrollamount="2" width="100%" height="40" onmouseover="this.stop()" onmouseout="this.start()" loop="10000" style="animation: slide 5s linear infinite alternate; font-size: 2em; color: yellow;">TEAMVILEN</marquee>
+         <marquee behavior="alternate" direction="left" scrollamount="2" width="100%" height="40" onmouseover="this.stop()" onmouseout="this.start()" loop="10000" style="animation: slide 5s linear infinite alternate; font-size: 0.8em; color: black;">TEAMVILEN</marquee>
     </div>
-	<h2 id="subject-title" class="title">APNI KAKSHA</h2>
+    <br>
+    <br>
+	<h2 id="subject-title" class="title" style="font-size: 50px;">APNI KAKSHA</h2>
 </div>
+<br>
+<br>
+<br>
  <div style="display: flex; justify-content: center; height: 8vh;">
-  <button style="background-color:#34C759; color:white; padding:15px 40px; font-size:24px; border-radius: 40px;"><a href="https://yashyasag.github.io/hiddens_officials" style="color:white; text-decoration:none;">𝗢𝘂𝗿 𝗠𝗔𝗜𝗡 𝗪𝗲𝗯𝘀𝗶𝘁𝗲</a></button>
+  <button style="background-color:#5eb0bd; color:white; padding:15px 40px; font-size:24px; border-radius: 40px;"><a href="https://yashyasag.github.io/hiddens_officials" style="color:white; text-decoration:none;">𝗢𝘂𝗿 𝗠𝗔𝗜𝗡 𝗪𝗲𝗯𝘀𝗶𝘁𝗲</a></button>
 </div>
+<br>
+<br>
     <div id="cards-container">
          <!-- Cards div through JS -->
     </div>
