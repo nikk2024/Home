@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEAMVILEN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .btn-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      background-color: #111827;
+      color: white;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      text-align: left;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-link:hover {
+      background-color: #1f2937;
+      transform: translateY(-1px);
+    }
+
+    .btn-link:active {
+      transform: translateY(0);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-orange-200 to-red-300 min-h-screen">
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const token = urlParams.get("token") || "defaultToken";
+    const BOT = `https://t.me/AK_LECTURES_BOT?start=${token}`;
+  </script>
+   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <header class="bg-gradient-to-r from-cyan-500 to-blue-400 shadow-md">
+    <div class="flex items-center justify-between px-6 py-4">
+      <img src="https://i.postimg.cc/xd5ZzqXM/image.png" alt="VILEN" class="w-16 rounded-lg" />
+      <p class="text-2xl text-black-300 font-bold tracking-wide" style="font-weight: 900; font-size: xx-large;">VILEN</p>
+    </div>
+  </header>
+
+  <div class="mt-4 text-center text-xl text-pink-700 font-semibold">
+</div>
+<br>
+  <div class="flex justify-center mt-6 px-4">
+    <p class="text-lg text-purple-900 text-center font-medium max-w-2xl">
+      Click on button below. If bot doesn't work, please let us know by contacting us by scrolling down 👇
+    </p>
+  </div>
+  <br>
+
+
+  <main class="max-w-4xl mx-auto mt-8 p-6 bg-white rounded-xl shadow-lg">
+    <div class="flex justify-between items-center mb-6">
+      <div>
+        <h2 class="text-2xl font-bold text-gray-800 flex items-center">
+          <i class="fas fa-fire text-orange-500 mr-2"></i> VILEN
+        </h2>
+        <p class="text-sm text-gray-600 mt-1">Click on any button below to get your requested material.</p>
+      </div>
+      <img src="https://i.postimg.cc/xd5ZzqXM/image.png" alt="VILEN" class="w-16 h-16 rounded-full shadow" />
+    </div>
+
+    <div class="space-y-4">
+      <a href="javascript:void(0)" onclick="window.location.href=BOT1" class="btn-link">
+        <img src="https://png.pngtree.com/png-vector/20220707/ourmid/pngtree-chatbot-robot-concept-chat-bot-png-image_5632381.png" class="w-10 h-10 rounded-full" alt="logo"> BOT 1
+      </a>
+    </div>
+  </main>
+  <br>
+  <br>
+
+  <section class="text-center mt-10 space-y-2">
+    <p class="text-lg text-blue-700" style="font-size: 22px; font-weight: 500;">Follow The Steps👇</p>
+    <br>
+    <p class="text-gray-800">• Just Click on the BOT, You will be redirected to your required content</p>
+    <p class="text-gray-800">• If BOT will say to complete any task, just complete it</p>
+    <p class="text-gray-800">• You will get your required CONTENT</p>
+    <p class="text-gray-800">• If BOT doesn't works, please let us know about that by contacting us...</p>
+    <p class="text-xl tracking-widest text-gray-600">✦✦✦✦✦✦✦✦✦✦✦✦✦</p>
+    <br>
+    <br>
+    <p class="text-teal-600" style="font-size: 30px; font-family: 'Times New Roman', Times, serif; font-weight: 600;"> Thank You For Visiting &hearts;</p>
+
+
+</section>
+
+  
+  <footer class="text-white bg-gray-900 py-6 mt-12 text-center rounded-t-xl">
+    <p class="text-sm text-white-300">Made with &hearts; by <span class="text-red-400 font-semibold">TEAMVILEN</span>. All rights reserved.</p>
+  </footer>
+</body>
+</html>
